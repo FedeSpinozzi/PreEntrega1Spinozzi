@@ -1,20 +1,9 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
-import {
-  MDBNavbar,
-  MDBContainer,
-  MDBIcon,
-  MDBNavbarNav,
-  MDBNavbarItem,
-  MDBNavbarLink,
-  MDBBadge
-} from 'mdb-react-ui-kit';
-
+import CartWidget from './CartWidget';
 
 
 
@@ -39,23 +28,7 @@ function Navigation() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-                      
-            <MDBNavbar expand='lg' light bgColor='light'>
-            <MDBContainer fluid>
-            <MDBNavbarNav>
-            <MDBNavbarItem>
-            <MDBNavbarLink href='#'>
-              <MDBBadge pill color='danger'>!</MDBBadge>
-              <span>
-                <MDBIcon fas icon='shopping-cart'></MDBIcon>
-              </span>
-            </MDBNavbarLink>
-            </MDBNavbarItem>
-            </MDBNavbarNav>
-            </MDBContainer>
-            </MDBNavbar>
-          </Form>
+          <CartWidget/>     
          
         </Navbar.Collapse>
       </Container>
