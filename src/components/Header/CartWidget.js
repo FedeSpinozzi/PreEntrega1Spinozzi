@@ -17,7 +17,7 @@ import {
             <MDBContainer fluid>
             <MDBNavbarNav>
             <MDBNavbarItem>
-            <MDBNavbarLink href='#'>
+            <MDBNavbarLink href='/cart'>
               <MDBBadge pill color='danger'>4</MDBBadge>
               <span>
                 <MDBIcon fas icon='shopping-cart'></MDBIcon>
