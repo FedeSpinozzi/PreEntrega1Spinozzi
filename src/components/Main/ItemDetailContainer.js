@@ -18,7 +18,7 @@ class ItemDetailContainer extends React.Component {
         this.state = {};
     }
     render (){
-        console.log("ITEM QUE LLEGA A LAS PROPS agus", this.props);
+        console.log("", this.props);
         const {itemList} = this.props;
         const pathname = window.location.pathname;
         const final = pathname.substring(pathname.length, pathname.length-1);
